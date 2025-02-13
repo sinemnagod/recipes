@@ -9,24 +9,23 @@ body {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 2px;
+    padding: 0.3em;
     align-items: center;
     background-color: #1F2937;
     border: 2px solid #1F2937;
-    
 
 }
 .logo {
     font-size: 24px;
     color: #F9FAF8;
     margin:0;
-    margin-left: 0.5em;
+    margin-left: 1.5em;
     background-color: #1F2937;
 }
-nav {
-    display:flex;
-}
 
+nav {
+ display: flex;
+}
 .navbar {
     font-size: 1.2em;
     color:#E5E7EB;
@@ -43,7 +42,6 @@ nav {
     @media (width <= 325px) {
         font-size: 0.6em;
     }
-
 }
 .navbar:hover {
     color:#c2c3c6;
@@ -156,7 +154,13 @@ h1 {
     justify-content: center;
     
     @media (width >= 600px) {
-        padding: 3em 10.5em;
+        padding: 3em 5em;
+    }
+    @media (width >= 900px) {
+        padding: 3em 10em;
+    }
+    @media (width >= 1200px) {
+        padding: 3em 16em;
     }
 }
 
