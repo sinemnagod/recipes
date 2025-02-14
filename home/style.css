@@ -176,13 +176,19 @@ h1 {
 
 
 .link {
-    color:forestgreen;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1.2em;
 }
 .cin-roll {
-    font-size: 22px !important;
+    color: chocolate;
 }
+.pizza {
+    color: rgb(148, 45, 45);
+}
+.pasta {
+    color: rgb(77, 122, 77);
+}
+
 .link:hover {
     color:darkgreen;
 }
