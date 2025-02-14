@@ -11,7 +11,6 @@ body {
 }
 div {
     margin: 1em 10em;
-    margin-top: 0;
     background-color: rgb(253, 243, 204);
     padding: 0.5em 2em;
     font-size: 0.7rem;
@@ -49,8 +48,6 @@ h1 {
     text-align: center;
     font-size: 1.5rem;
     font-size: clamp(1.5rem, 0.8052109181141439rem + 3.4739454094292808vw, 5rem);
-
-    
 }
 
 h1, h2, h3 {
@@ -63,19 +60,45 @@ li {
 header {
     display: flex;
     justify-content: space-between;
-    padding: 0.3em;
     align-items: center;
     background-color: #1F2937;
     border: 2px solid #1F2937;
+    position:fixed;
+    width: 100%;
 
 }
 .logo {
     font-size: 24px;
     color: #F9FAF8;
     margin:0;
-    margin-left: 0.5em;
     background-color: #1F2937;
+    padding: 0.5em;
 }
+.logo-img {
+    margin-left: 1em;
+    @media (width <= 800px) {
+        height: 70px;
+        width: 70px;
+    }
+    @media (width <= 650px) {
+        height: 65px;
+        width: 65px;
+    }
+
+    @media (width <= 550px) {
+        height: 60px;
+        width: 60px;
+    }
+    @media (width <= 500px) {
+        height: 55px;
+        width: 55px;
+    }
+    @media (width <= 430px) {
+        height: 50px;
+        width: 50px;
+    }
+}
+
 
 nav {
  display: flex;
@@ -86,6 +109,7 @@ nav {
     text-decoration: none;
     margin-left: 1em;
     margin-right: 1em;
+    padding: 0.5em;
 
     @media (width < 445px) {
         font-size: 0.8em;
@@ -98,11 +122,13 @@ nav {
     }
 }
 .navbar:hover {
-    color:#c2c3c6;
+    color:#1F2937;
+    background-color:#E5E7EB;
+    border-radius: 10px;
     cursor:pointer;
 }
 .recipe {
-    margin-top:1em;
+    margin-top:8em;
     margin-bottom: 1em;
 }
 footer {
