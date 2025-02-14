@@ -27,14 +27,20 @@ header {
 }
 
 nav {
- display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
 }
+
 .navbar {
     font-size: 1.2em;
     color:#E5E7EB;
     text-decoration: none;
     margin-left: 1em;
     margin-right: 1em;
+    padding: 0.5em;
+
+    
 
     @media (width < 445px) {
         font-size: 0.8em;
@@ -46,8 +52,13 @@ nav {
         font-size: 0.6em;
     }
 }
+
 .navbar:hover {
-    color:#c2c3c6;
+    color:#1F2937;
+    background-color:#E5E7EB;
+    border-radius: 10px;
+}
+nav:hover {
     cursor:pointer;
 }
 .container1 {
